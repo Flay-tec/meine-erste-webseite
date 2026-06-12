@@ -2,25 +2,127 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Meine erste Webseite</title>
+    <title>Waldreich</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 100px auto;
+            font-family: 'Georgia', serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+                              url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #e8e0d0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
             text-align: center;
-            background-color: #f0f0f0;
+            padding: 60px 40px 40px;
         }
+
+        .logo {
+            font-size: 0.85em;
+            letter-spacing: 0.4em;
+            color: #8a9e6e;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
         h1 {
-            color: #333;
+            font-size: 3.5em;
+            font-weight: normal;
+            color: #f0ebe0;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
         }
+
+        .trennlinie {
+            width: 60px;
+            height: 1px;
+            background-color: #8a9e6e;
+            margin: 32px auto;
+        }
+
+        .untertitel {
+            font-size: 1em;
+            letter-spacing: 0.2em;
+            color: #8a9e6e;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 640px;
+            text-align: center;
+            padding: 0 40px 80px;
+        }
+
         p {
-            color: #666;
+            font-size: 1.1em;
+            line-height: 2;
+            color: #b0a898;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 14px 40px;
+            border: 1px solid #8a9e6e;
+            color: #8a9e6e;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #8a9e6e;
+            color: #0d1a0d;
+        }
+
+        footer {
+            font-size: 0.75em;
+            letter-spacing: 0.2em;
+            color: #4a5e3a;
+            text-transform: uppercase;
+            padding: 30px;
         }
     </style>
 </head>
 <body>
-    <h1>Hallo Welt!</h1>
-    <p>Das ist meine erste Webseite.</p>
+
+    <header>
+        <div class="logo">Waldreich</div>
+        <h1>Der Wald.<br>Unberührt.</h1>
+        <div class="trennlinie"></div>
+        <div class="untertitel">Seit 2024</div>
+    </header>
+
+    <main>
+        <p>
+            Tief im Inneren des Waldes liegt eine Stille,
+            die keine Stadt kennt. Wir bringen sie zu Ihnen.
+        </p>
+        <p>
+            Exklusiv. Natürlich. Zeitlos.
+        </p>
+        <a class="cta" href="#">Mehr erfahren</a>
+    </main>
+
+    <footer>
+        &copy; 2024 Waldreich &mdash; Alle Rechte vorbehalten
+    </footer>
+
 </body>
 </html>
